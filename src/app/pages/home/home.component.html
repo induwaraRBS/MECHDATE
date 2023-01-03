@@ -5,6 +5,7 @@
     </div>
     
 </div>
+<!-- step -->
 <div class="container mt-5 mb-5">
     <h1 class="text-center">How to make<span class="highlight"> an appoitment</span></h1>
     <div class="row mt-5">
@@ -35,4 +36,23 @@
       
 
     </div>
+</div>
+
+<!-- orederbox -->
+
+<div class="conatiners mt-4 mb-4">
+    <h1 class="text-center">Latest<span class="highlight"> Works</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor= "let md of mechanicData;index as i">
+            <div class="orderBox" *ngIf="i<=3">
+                <!-- <img src= "{{md.mechimg}}"/>  -->
+                <h1>{{md.MechanicName}}</h1>
+                <p>Experties: {{md. Experties}}</p>
+                <p>Address: {{md.Address}}</p>
+                <p>Ratings: {{md.Ratings}}</p>
+            </div>
+
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">View more<i class="bi bi-arrow-right"></i></a>
 </div>

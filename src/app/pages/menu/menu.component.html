@@ -1,1 +1,16 @@
-<p>menu works!</p>
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let md of mechanicData">
+            <div class="orderBox">
+                <img src="{{md.mechimg}}"/>
+                <h1>{{md.MechanicName}}</h1>
+                <p>{{md.Experties}}</p>
+                <p>{{md.Address}}</p>
+                <p>{{md. Ratings}}</p>
+                <a>Book</a>
+            </div>
+        </div>
+    </div>
+
+</div>
