@@ -1,5 +1,5 @@
 .orderBox{
-    padding: 10px 10px;
+    padding: 20px 10px;
     
 
 }
@@ -17,4 +17,23 @@
 .orderBox{
     font-size: 18px;
     margin-top: 20px;
+}
+.buybtn
+{
+    
+    color:#000;
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.d-flex button{
+    color: #000;
+
+
+}
+.nav-link.active{
+    color: var(--primary-color);
 }
