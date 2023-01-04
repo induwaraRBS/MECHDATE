@@ -43,9 +43,9 @@
 <div class="conatent mt-4 mb-4">
     <h1 class="text-center">Latest<span class="highlight"> Works</span></h1>
     <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor= "let md of mechanicData;index as i">
-            <div class="orederbox" *ngIf="i<=3">
-                <img src= "{{md.mechimg}}"/> 
+        <div class="col-lg-3 mt-3" *ngFor="let md of mechanicData;index as i">
+            <div class="orderBox" *ngIf="i<=3">
+                <img src="{{md.mechimg}}">
                 <h1>{{md.MechanicName}}</h1>
                 <p>Experties: {{md. Experties}}</p>
                 <p>Address: {{md.Address}}</p>

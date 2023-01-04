@@ -11,6 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccountComponent } from './pages/account/account.component';
+import { MenupageComponent } from './pages/menupage/menupage.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AccountComponent } from './pages/account/account.component';
     MenuComponent,
     AboutComponent,
     ContactComponent,
-    AccountComponent
+    AccountComponent,
+    MenupageComponent
   ],
   imports: [
     BrowserModule,
