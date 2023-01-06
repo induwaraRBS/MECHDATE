@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccountComponent } from './pages/account/account.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
+import { SignuppageComponent } from './pages/signuppage/signuppage.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MenupageComponent } from './pages/menupage/menupage.component';
     AboutComponent,
     ContactComponent,
     AccountComponent,
-    MenupageComponent
+    MenupageComponent,
+    SignuppageComponent
   ],
   imports: [
     BrowserModule,
