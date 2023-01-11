@@ -3,7 +3,7 @@
     <div class="row">
         
         <div class="col-lg-6" *ngIf= "menuData">
-                <img src="F:\Stduying\angular project\New folder\MECHDATE\src\assets\img\Bikeimg.jpg" width="100%"/>
+                <img src="{{menuData[0].mechimg}}" >
                 <h1>{{menuData[0].MechanicName}}</h1>
                 <p>{{menuData[0].Experties}}</p>
                 <p>{{menuData[0].Address}}</p>

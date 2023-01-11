@@ -16,7 +16,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq" 
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
        
     },
     {
@@ -25,7 +25,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
     },
     {
       id:3,
@@ -33,7 +33,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
     },
     {
       id:4,
@@ -41,7 +41,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://unsplash.com/@harrydona?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
     },
     {
       id:5,
@@ -49,7 +49,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://unsplash.com/@harrydona?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
     },
     {
       id:3,
@@ -57,7 +57,7 @@ export class OrderDetailsService {
       Experties:"Motor Bikes engines",
       Address:"No.57,Hallow street,Brooklyn ",
       Ratings:"7/10",
-      mechimg:"https://unsplash.com/@harrydona?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      mechimg:"https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" 
     }
 
   ]
