@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccountComponent } from './pages/account/account.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
 import { SignuppageComponent } from './pages/signuppage/signuppage.component';
+import { FormsModule } from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SignuppageComponent } from './pages/signuppage/signuppage.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
