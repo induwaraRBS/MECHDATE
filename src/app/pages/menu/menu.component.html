@@ -12,14 +12,15 @@
         <div class="container mt-8 mb-8">
 
         <div class="row">
-            <div class="col-lg-4" *ngFor="let md of mechanicData">
+            <div class="col-lg-4" *ngFor="let mech of mechArray">
                 <div class="orderBox">
-                    <img src="{{md.mechimg}}"/>
-                    <h1>{{md.MechanicName}}</h1>
-                    <p>{{md.Experties}}</p>
-                    <p>{{md.Address}}</p>
-                    <p>{{md. Ratings}}</p>
-                    <a class="buybtn" [routerLink]="['/menu',md.id]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
+                    <img src="https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg"/>
+                   <label >First Name</label><h1>{{mech.first_name}}</h1>
+                   <label >Last Name:</label><h1>{{mech.Last_name}}</h1>
+                   <label >Expertise:</label><h1>{{mech.expertise}}</h1>
+                   <label >Phone:</label><h1>{{mech.phone}}</h1>
+                   <label >Email:</label><h1>{{mech.email}}</h1>
+                    <a class="buybtn" [routerLink]="['/menu',mech.first_name]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
                 </div>
             </div>
         </div>
@@ -32,14 +33,15 @@
         <div class="container mt-8 mb-8">
 
             <div class="row">
-                <div class="col-lg-4" *ngFor="let md of mechanicData">
+                <div class="col-lg-4" *ngFor="let mech of mechArray">
                     <div class="orderBox">
-                        <img src="{{md.mechimg}}"/>
-                        <h1>{{md.MechanicName}}</h1>
-                        <p>{{md.Experties}}</p>
-                        <p>{{md.Address}}</p>
-                        <p>{{md. Ratings}}</p>
-                        <a class="buybtn" [routerLink]="['/menu',md.id]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
+                        <img src="https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg"/>
+                   <label >First Name</label><h1>{{mech.first_name}}</h1>
+                   <label >Last Name:</label><h1>{{mech.Last_name}}</h1>
+                   <label >Expertise:</label><h1>{{mech.expertise}}</h1>
+                   <label >Phone:</label><h1>{{mech.phone}}</h1>
+                   <label >Email:</label><h1>{{mech.email}}</h1>
+                        <a class="buybtn" [routerLink]="['/menu',mech.id]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,14 +54,15 @@
         <div class="container mt-8 mb-8">
 
             <div class="row">
-                <div class="col-lg-4" *ngFor="let md of mechanicData">
+                <div class="col-lg-4" *ngFor="let mech of mechArray">
                     <div class="orderBox">
-                        <img src="{{md.mechimg}}"/>
-                        <h1>{{md.MechanicName}}</h1>
-                        <p>{{md.Experties}}</p>
-                        <p>{{md.Address}}</p>
-                        <p>{{md. Ratings}}</p>
-                        <a class="buybtn" [routerLink]="['/menu',md.id]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
+                        <img src="https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg"/>
+                        <label >First Name</label><h1>{{mech.first_name}}</h1>
+                        <label >Last Name:</label><h1>{{mech.Last_name}}</h1>
+                        <label >Expertise:</label><h1>{{mech.expertise}}</h1>
+                        <label >Phone:</label><h1>{{mech.phone}}</h1>
+                        <label >Email:</label><h1>{{mech.email}}</h1>
+                        <a class="buybtn" [routerLink]="['/menu',mech.id]">Make Appointment &nbsp; <i class="bi bi-calendar-check"></i></a>
                     </div>
                 </div>
             </div>

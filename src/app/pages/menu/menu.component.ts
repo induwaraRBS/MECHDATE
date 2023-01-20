@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OrderDetailsService } from 'src/app/services/order-details.service';
 
@@ -8,12 +9,29 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 })
 export class MenuComponent implements OnInit{
 
-  constructor(private service:OrderDetailsService){
+  mechArray :any[] =[];
+  first_name :string ="";
+  Last_name :string ="";
+  email:string="";
+  expertise:string="";
+  phone:string="";
+ 
+
+  constructor(private http:HttpClient){
+    this.getAllmechanics();
 }
-  mechanicData:any;
-  ngOnInit(): void {
-    this.mechanicData =this.service.mechanicDetails;
+  getAllmechanics() {
+    this.http.get("http://localhost:8000/user/getAll").subscribe((resultData: any)=>
+    {
+      
+        // console.log(resultData);
+        this.mechArray = resultData.data;
+  });
+}
+  
+  ngOnInit(): void {  
     
   }
+
 
 }

@@ -1,11 +1,11 @@
 .orderBox{
-    padding: 20px 10px;
+    padding: 0px 10px;
     
 
 }
 .orderBox h1
 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 .orderBox img{
@@ -15,6 +15,7 @@
     border-radius: 5px;
 }
 .orderBox{
+    
     font-size: 18px;
     margin-top: 20px;
 }

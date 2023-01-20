@@ -11,7 +11,11 @@ import { Router } from '@angular/router';
 export class SignuppageComponent implements OnInit{
   first_name :string ="";
   Last_name :string ="";
+  email:string="";
+  expertise:string="";
+  phone:string="";
   password :string ="";
+ 
 
   constructor(private http:HttpClient)
   {
@@ -26,7 +30,10 @@ export class SignuppageComponent implements OnInit{
     let bodyData = {
       "first_name" : this.first_name,
       "Last_name":this.Last_name,
-      "password":this.password
+      "email":this.email,
+      "expertise":this.expertise,
+      "phone":this.phone,
+      "password":this.password,
     } ;
     this.http.post("http://localhost:8000/user/create",bodyData).subscribe((resultData:any)=>
     {
@@ -35,6 +42,9 @@ export class SignuppageComponent implements OnInit{
       // this.getAllEmployee();
       this.first_name = '';
       this.Last_name = '';
+      this.email='';
+      this.expertise='';
+      this.phone='';
       this.password = '';
     });
   }
