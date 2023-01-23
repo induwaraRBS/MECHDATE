@@ -1,1 +1,43 @@
-<p>contact works!</p>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        <h4 class="card-title"><strong>Contact</strong></h4>
+                    </div>
+
+                    <div  class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important; height:400px !important;"  >
+                       
+                        <div class ="chatbox"*ngFor="let message of messageList">
+                            <li>
+                                {{message}}
+                            </li>
+                          </div>
+                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                           <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;">
+                           </div>
+
+                    
+                        </div>
+                      
+                    </div>
+                    
+                    <div  class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
+                        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="publisher bt-1 border-light">
+                    <img class="avatar avatar-xs" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
+                    <input class="publisher-input"  placeholder="Write something" [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()">
+                    <button class="btn btn-s btn-secondary" (click)="sendMessage()">Send Message</button>
+                </div>
+            </div>
+                
+        </div>
+
+    </div>
+
+</div>
+
