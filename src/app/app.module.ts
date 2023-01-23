@@ -15,6 +15,7 @@ import { MenupageComponent } from './pages/menupage/menupage.component';
 import { SignuppageComponent } from './pages/signuppage/signuppage.component';
 import { FormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
+import { AccountdetailsComponent } from './pages/accountdetails/accountdetails/accountdetails.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import{HttpClientModule} from '@angular/common/http';
     ContactComponent,
     AccountComponent,
     MenupageComponent,
-    SignuppageComponent
+    SignuppageComponent,
+    AccountdetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SignuppageComponent } from '../signuppage/signuppage.component';
 import {  ActivatedRoute, ParamMap } from '@angular/router';
+import { AccountdetailsComponent } from '../accountdetails/accountdetails/accountdetails.component';
 
 
 @Component({

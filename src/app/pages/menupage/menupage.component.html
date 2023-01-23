@@ -2,13 +2,9 @@
     
     <div class="row">
         
-        <div class="col-lg-6" *ngIf= "menuData">
-                <img src="{{menuData[0].mechimg}}" >
-                <h1>{{menuData[0].MechanicName}}</h1>
-                <p>{{menuData[0].Experties}}</p>
-                <p>{{menuData[0].Address}}</p>
-                <p>{{menuData[0].Ratings}}</p>
-                <p>{{menuData[0].MechanicName}}</p>
+        <div class="col-lg-6" >
+                <img src="https://www.usafa.edu/app/uploads/211007-F-NH566-1002.jpg" >
+                
         </div>
 
         <div class="col-lg-6">
@@ -16,37 +12,35 @@
                 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="name">Full Name</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name"[(ngModel)]="full_name" [ngModelOptions]="{standalone:true}">
 
                 </div>
                 <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Categroize</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>Car</option>
-                      <option value="1">Bike</option>
-                      <option value="2">Others</option>
-                    </select>
+                    
+                        <span class="input-group-text" id="address">Category</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Category" [(ngModel)]="Category" [ngModelOptions]="{standalone:true}">
+                  
                 </div>
                 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="address">Address</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Address">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Address" [(ngModel)]="Address" [ngModelOptions]="{standalone:true}">
                 </div>
                 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="phonenum">Phone Number</span>
-                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Phone Number" [(ngModel)]="phonenumber" [ngModelOptions]="{standalone:true}">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="email">email</span>
-                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="email"  [(ngModel)]="phonenumber" [ngModelOptions]="{standalone:true}">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="Date">Date of the appointment</span>
-                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"placeholder="Date" [(ngModel)]="Date" [ngModelOptions]="{standalone:true}">
                 </div>
                 <div class="pt-1 mb-2 ">
-                    <button class="btn btn-dark btn-lg " type="submit" >Submit </button>
+                    <button class="btn btn-dark btn-lg " type="submit" (click)="register()" >Submit </button>
                   </div>
                   <div class="pt-1 mb-2 ">
                     <button class="btn btn-dark btn-lg " type="submit"  routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" data-inline="true" >Contact </button>
