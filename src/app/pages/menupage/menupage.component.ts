@@ -15,10 +15,11 @@ export class MenupageComponent implements OnInit {
   phonenumber:string="";
   email :string ="";
   Date:string="";
-  constructor(private http:HttpClient){ }
+  id: string = "";
+  constructor(private http:HttpClient, private route: ActivatedRoute){ }
   
   ngOnInit(): void {
-    
+    this.id = this.route.snapshot.paramMap.get('id')!;
   
   }
   register()
@@ -28,11 +29,11 @@ export class MenupageComponent implements OnInit {
       "full_name" : this.full_name,
       "Category":this.Category,
       "Address":this.Address,
-      "phone":this.phonenumber,
+      "phonenumber":this.phonenumber,
       "email":this.email,
       "Date":this.Date
     } ;
-    this.http.post("http://localhost:8000/",bodyData).subscribe((resultData:any)=>
+    this.http.patch(`http://localhost:8000/user/newappointment/${this.id}`,bodyData).subscribe((resultData:any)=>
     {
       console.log(resultData);
       alert("Mechanic Registered Successfully")

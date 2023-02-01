@@ -34,6 +34,7 @@ export class SignuppageComponent implements OnInit{
       "expertise":this.expertise,
       "phone":this.phone,
       "password":this.password,
+      Appointments:[]
     } ;
     this.http.post("http://localhost:8000/user/create",bodyData).subscribe((resultData:any)=>
     {
